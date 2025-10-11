@@ -4,77 +4,76 @@ using Microsoft.EntityFrameworkCore;
 
 namespace IEL.Service
 {
-    // Implementação da interface IAlunoService
     public class AlunosService : IAlunoService
     {
-        private readonly AppDbContext _Context;
+        private readonly AppDbContext _context;
 
-        // Implementação dos métodos da interface IAlunoService (Criação de um novo Aluno)
-        public async Task<Aluno> CreateAluno(Aluno aluno)
+        // Construtor
+        public AlunosService(AppDbContext context)
         {
-            _Context.Alunos.Add(aluno);
-            await _Context.SaveChangesAsync();
-            return aluno;
+            _context = context;
         }
 
-        // Implementação dos métodos da interface IAlunoService (Atualizar um Aluno)
-        public async Task<Aluno> UpdateAluno(Aluno aluno)
-        {
-            _Context.Entry(aluno).State = EntityState.Modified;
-            await _Context.SaveChangesAsync();
-            return aluno;
-        }
-
-        // Implementação dos métodos da interface IAlunoService (Delete de um novo Aluno)
-        public async Task DeleteAluno(Aluno aluno)
-        {
-            _Context.Alunos.Remove(aluno);
-            await _Context.SaveChangesAsync();
-        }
-
-        // Implementação dos métodos da interface IAlunoService (Pegar a lista de Alunos)
+        // Implementação dos métodos da interface IAlunoService
         public async Task<IEnumerable<Aluno>> GetAlunos()
         {
-            // Retorna a lista de Alunos do banco de dados
-            try
-            {
-                return await _Context.Alunos.ToListAsync();
-            }
-            // Em caso de erro, lança a exceção para ser tratada em outro lugar
-            catch
-            {
-                throw;
-            }
+            return await _context.Alunos.ToListAsync();
         }
 
-
-        // Implementação dos métodos da interface IAlunoService (Pegar um Aluno pelo Id)
+        // Método para obter um aluno pelo ID
         public async Task<Aluno> GetAluno(int id)
         {
-            // Retorna o Aluno correspondente ao Id fornecido
-            var aluno = await _Context.Alunos.FindAsync(id);
-            // Se o Aluno não for encontrado, lança uma exceção
-            return aluno!;
+            return await _context.Alunos.FindAsync(id);
         }
 
-        // Implementação dos métodos da interface IAlunoService (Pegar Alunos pelo Nome)
+        // Método para buscar alunos pelo nome
         public async Task<IEnumerable<Aluno>> GetAlunosByName(string name)
         {
-            IEnumerable<Aluno> alunos;
             if (!string.IsNullOrWhiteSpace(name))
             {
-                // Consulta os alunos cujo nome contém a string fornecida (case-insensitive)
-                alunos = await _Context.Alunos
-                    .Where(n => n.Name!.Contains(name))
+                return await _context.Alunos
+                    .Where(a => a.Name!.Contains(name))
                     .ToListAsync();
             }
-            else
-            {
-                // Se o nome for nulo ou vazio, retorna todos os alunos
-                alunos = await GetAlunos();
-            }
-            // Retorna a lista de alunos encontrados
-            return alunos;
+            return await GetAlunos();
         }
+
+        // Método para buscar alunos pelo cpf
+        public async Task<Aluno> GetAlunoByCpf(string cpf)
+        {
+            return await _context.Alunos
+            .FirstOrDefaultAsync(a => a.CPF == cpf);
+        }
+
+        // Método para buscar alunos pela data de conclusão
+        public async Task<IEnumerable<Aluno>> GetAlunosByDataDeConclusao(DateTime dataDeConclusao)
+        {
+            return await _context.Alunos
+                .Where(a => a.DateConclusao.Date == dataDeConclusao.Date)
+                .ToListAsync();
+        }
+
+
+        // Método para criar um novo aluno
+        public async Task<Aluno> CreateAluno(Aluno aluno)
+        {
+            _context.Alunos.Add(aluno);
+            await _context.SaveChangesAsync();
+            return aluno;
+        }
+        // Método para atualizar um aluno existente
+        public async Task<Aluno> UpdateAluno(Aluno aluno)
+        {
+            _context.Entry(aluno).State = EntityState.Modified;
+            await _context.SaveChangesAsync();
+            return aluno;
+        }
+        // Método para deletar um aluno
+        public async Task DeleteAluno(Aluno aluno)
+        {
+            _context.Alunos.Remove(aluno);
+            await _context.SaveChangesAsync();
+        }
+
     }
 }

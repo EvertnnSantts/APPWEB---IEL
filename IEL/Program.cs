@@ -12,13 +12,23 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Registro do serviço AlunoService
 builder.Services.AddScoped<IAlunoService, AlunosService>();
 
+// ?? Adiciona serviços do Swagger
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
 // Adiciona suporte a controladores e views
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 // Configuração do pipeline HTTP
-if (!app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment())
+{
+    // ?? Ativa o Swagger no ambiente de desenvolvimento
+    app.UseSwagger();
+    app.UseSwaggerUI();
+}
+else
 {
     app.UseExceptionHandler("/Home/Error");
     app.UseHsts();

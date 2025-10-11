@@ -4,18 +4,25 @@ namespace IEL.Service
 {
     public interface IAlunoService
     {
-        // Metado para chama a lista de Alunos
+        // Método para obter a lista de todos os alunos
         Task<IEnumerable<Aluno>> GetAlunos();
-        // Metado para chama um Aluno pelo Id
-        Task<Aluno> GetAluno(int id);
-        // Metado para Adicionar um Aluno
-        Task<IEnumerable<Aluno>> GetAlunosByName(string name);
 
-        //Metado para criar um novo Aluno
+        // Método para obter um aluno pelo ID
+        Task<Aluno> GetAluno(int id);
+
+        // Método para buscar alunos pelo nome
+        Task<IEnumerable<Aluno>> GetAlunosByName(string name);
+        // Metado para buscar alunos pelo cpf
+        Task<Aluno> GetAlunoByCpf(string cpf);
+        // Método para buscar alunos pelo datadecoclusao
+        Task<IEnumerable<Aluno>> GetAlunosByDataDeConclusao(DateTime dataDeConclusao);
+        // Método para criar um novo aluno
         Task<Aluno> CreateAluno(Aluno aluno);
-        // Metado para Atualizar um Aluno
+
+        // Método para atualizar um aluno existente
         Task<Aluno> UpdateAluno(Aluno aluno);
-        // Metado para Deletar um Aluno
+
+        // Método para deletar um aluno
         Task DeleteAluno(Aluno aluno);
     }
 }
