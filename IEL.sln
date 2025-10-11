@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IEL", "IEL\IEL.csproj", "{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC1D7D26-CF48-46D7-93F8-5E6CE1CF76B4}
+	EndGlobalSection
+EndGlobal
