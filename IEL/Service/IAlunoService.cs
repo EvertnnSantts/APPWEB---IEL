@@ -12,8 +12,8 @@ namespace IEL.Service
 
         // Método para buscar alunos pelo nome
         Task<IEnumerable<Aluno>> GetAlunosByName(string name);
-        // Metado para buscar alunos pelo cpf
-        Task<Aluno> GetAlunoByCpf(string cpf);
+        // Metado para buscar alunos pelo endereco
+        Task<Aluno> GetAlunoByAddress(string address);
         // Método para buscar alunos pelo datadecoclusao
         Task<IEnumerable<Aluno>> GetAlunosByDataDeConclusao(DateTime dataDeConclusao);
         // Método para criar um novo aluno

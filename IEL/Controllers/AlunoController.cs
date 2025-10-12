@@ -2,6 +2,7 @@
 using IEL.Service;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net;
 
 namespace IEL.Controllers
 {
@@ -68,14 +69,14 @@ namespace IEL.Controllers
         }
 
         // GET: api/Aluno/buscar-por-cpf?cpf=12345678900
-        [HttpGet("buscar-por-cpf")]
-        public async Task<ActionResult<Aluno>> GetAlunosByCPF([FromQuery] string cpf)
+        [HttpGet("buscar-por-endereco")]
+        public async Task<ActionResult<Aluno>> GetAlunoByAddress([FromQuery] string endereco)
         {
             try
             {
-                var aluno = await _alunoService.GetAlunoByCpf(cpf);
+                var aluno = await _alunoService.GetAlunoByAddress(endereco);
                 if (aluno == null)
-                    return NotFound($"Aluno com CPF {cpf} não encontrado.");
+                    return NotFound($"Aluno com endereco {endereco} não encontrado.");
 
                 return Ok(aluno);
             }

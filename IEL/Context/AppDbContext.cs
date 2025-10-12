@@ -27,7 +27,7 @@ namespace IEL.Context
                     Name = "Alice Johnson",
                     Email = "AliceJohnson@gmail.com",
                     DateConclusao = new DateTime(2024, 06, 30),
-                    CPF = "982.654.321-00"
+                    Address = "982.654.321-00"
                 },
                 new Aluno
                 {
@@ -35,7 +35,7 @@ namespace IEL.Context
                     Name = "Bob Smith",
                     Email = "BobSmith@gmail.com",
                     DateConclusao = new DateTime(2024, 06, 30),
-                    CPF = "987.654.321-00"
+                    Address = "987.654.321-00"
                 }
             );
         }

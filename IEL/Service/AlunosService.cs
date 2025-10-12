@@ -39,10 +39,9 @@ namespace IEL.Service
         }
 
         // Método para buscar alunos pelo cpf
-        public async Task<Aluno> GetAlunoByCpf(string cpf)
+        public async Task<Aluno> GetAlunoByAddress(string address)
         {
-            return await _context.Alunos
-            .FirstOrDefaultAsync(a => a.CPF == cpf);
+            return await _context.Alunos.FirstOrDefaultAsync(a => a.Address == address);
         }
 
         // Método para buscar alunos pela data de conclusão
