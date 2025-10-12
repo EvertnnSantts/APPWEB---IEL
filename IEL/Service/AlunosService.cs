@@ -38,10 +38,16 @@ namespace IEL.Service
             return await GetAlunos();
         }
 
-        // Método para buscar alunos pelo cpf
+        // Método para buscar aluno pelo endereço
         public async Task<Aluno> GetAlunoByAddress(string address)
         {
             return await _context.Alunos.FirstOrDefaultAsync(a => a.Address == address);
+        }
+
+        // ✅ Método para buscar aluno pelo CPF
+        public async Task<Aluno> GetAlunoByCpf(string cpf)
+        {
+            return await _context.Alunos.FirstOrDefaultAsync(a => a.Cpf == cpf);
         }
 
         // Método para buscar alunos pela data de conclusão
@@ -52,7 +58,6 @@ namespace IEL.Service
                 .ToListAsync();
         }
 
-
         // Método para criar um novo aluno
         public async Task<Aluno> CreateAluno(Aluno aluno)
         {
@@ -60,6 +65,7 @@ namespace IEL.Service
             await _context.SaveChangesAsync();
             return aluno;
         }
+
         // Método para atualizar um aluno existente
         public async Task<Aluno> UpdateAluno(Aluno aluno)
         {
@@ -67,12 +73,12 @@ namespace IEL.Service
             await _context.SaveChangesAsync();
             return aluno;
         }
+
         // Método para deletar um aluno
         public async Task DeleteAluno(Aluno aluno)
         {
             _context.Alunos.Remove(aluno);
             await _context.SaveChangesAsync();
         }
-
     }
 }

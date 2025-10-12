@@ -53,7 +53,7 @@ namespace IEL.Controllers
         }
 
         // GET: api/Aluno/buscar-por-nome?name=Fulano
-        [HttpGet("Buscar-por-nome")]
+        [HttpGet("buscar-por-nome")]
         public async Task<ActionResult<IEnumerable<Aluno>>> GetAlunosByNome([FromQuery] string name)
         {
             try
@@ -68,7 +68,7 @@ namespace IEL.Controllers
             }
         }
 
-        // GET: api/Aluno/buscar-por-cpf?cpf=12345678900
+        // GET: api/Aluno/buscar-por-endereco?endereco=Rua%20das%20Flores
         [HttpGet("buscar-por-endereco")]
         public async Task<ActionResult<Aluno>> GetAlunoByAddress([FromQuery] string endereco)
         {
@@ -76,7 +76,7 @@ namespace IEL.Controllers
             {
                 var aluno = await _alunoService.GetAlunoByAddress(endereco);
                 if (aluno == null)
-                    return NotFound($"Aluno com endereco {endereco} não encontrado.");
+                    return NotFound($"Aluno com endereço {endereco} não encontrado.");
 
                 return Ok(aluno);
             }
@@ -84,6 +84,25 @@ namespace IEL.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                     $"Erro ao tentar obter o aluno: {ex.Message}");
+            }
+        }
+
+        // ✅ GET: api/Aluno/buscar-por-cpf?cpf=123.456.789-00
+        [HttpGet("buscar-por-cpf")]
+        public async Task<ActionResult<Aluno>> GetAlunoByCpf([FromQuery] string cpf)
+        {
+            try
+            {
+                var aluno = await _alunoService.GetAlunoByCpf(cpf);
+                if (aluno == null)
+                    return NotFound($"Aluno com CPF {cpf} não encontrado.");
+
+                return Ok(aluno);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,
+                    $"Erro ao tentar obter o aluno pelo CPF: {ex.Message}");
             }
         }
 
@@ -114,7 +133,8 @@ namespace IEL.Controllers
             try
             {
                 if (aluno == null)
-                    return BadRequest("O objeto aluno não pode ter espaçpos vazios.");
+                    return BadRequest("O objeto aluno não pode ter espaços vazios.");
+
                 await _alunoService.CreateAluno(aluno);
 
                 // Retorna 201 Created com a rota do GET por ID
@@ -126,6 +146,7 @@ namespace IEL.Controllers
                     $"Erro ao criar aluno: {ex.Message}");
             }
         }
+
         // PUT: api/Aluno/1 (Atualização de cadastro)
         [HttpPut("{id:int}")]
         public async Task<ActionResult> EditAluno(int id, [FromBody] Aluno aluno)
@@ -133,7 +154,7 @@ namespace IEL.Controllers
             try
             {
                 if (aluno == null)
-                    return BadRequest("O epaço não pode ser vazio.");
+                    return BadRequest("O espaço não pode ser vazio.");
 
                 if (aluno.Id != id)
                     return BadRequest("O ID do aluno não confere com o informado.");
@@ -148,27 +169,28 @@ namespace IEL.Controllers
                     $"Erro ao atualizar aluno: {ex.Message}");
             }
         }
-        // Delete: api/Aluno/1 (Deleta cadastro)
+
+        // DELETE: api/Aluno/1 (Deleta cadastro)
         [HttpDelete("{id:int}")]
         public async Task<ActionResult> ExcluirAluno(int id)
         {
             try
             {
-               var aluno = _alunoService.GetAluno(id);
+                var aluno = await _alunoService.GetAluno(id);
                 if (aluno != null)
                 {
-                 await _alunoService.DeleteAluno(await aluno);
-                 return Ok("Aluno deletado com sucesso.");
+                    await _alunoService.DeleteAluno(aluno);
+                    return Ok("Aluno deletado com sucesso.");
                 }
                 else
                 {
-                 return NotFound("Aluno não encontrado.");
+                    return NotFound("Aluno não encontrado.");
                 }
             }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
-                    $"Erro ao deleta aluno: {ex.Message}");
+                    $"Erro ao deletar aluno: {ex.Message}");
             }
         }
     }

@@ -1,8 +1,6 @@
 ﻿using IEL.Models;
 using Microsoft.EntityFrameworkCore;
-using IEL.Models;
-using Microsoft.EntityFrameworkCore;
-using System; 
+using System;
 
 namespace IEL.Context
 {
@@ -27,7 +25,8 @@ namespace IEL.Context
                     Name = "Alice Johnson",
                     Email = "AliceJohnson@gmail.com",
                     DateConclusao = new DateTime(2024, 06, 30),
-                    Address = "982.654.321-00"
+                    Address = "Rua das Flores, 123 - São Paulo/SP",
+                    Cpf = "123.456.789-00"
                 },
                 new Aluno
                 {
@@ -35,10 +34,10 @@ namespace IEL.Context
                     Name = "Bob Smith",
                     Email = "BobSmith@gmail.com",
                     DateConclusao = new DateTime(2024, 06, 30),
-                    Address = "987.654.321-00"
+                    Address = "Av. Central, 456 - Rio de Janeiro/RJ",
+                    Cpf = "987.654.321-00"
                 }
             );
         }
     }
 }
-

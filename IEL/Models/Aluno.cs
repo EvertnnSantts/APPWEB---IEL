@@ -32,5 +32,10 @@ namespace IEL.Models
         [Required(ErrorMessage = "O endereço é obrigatório.")]
         [StringLength(200)]
         public string Address { get; set; } = string.Empty;
+
+        // Define a propriedade CPF com validação
+        [Required(ErrorMessage = "O CPF é obrigatório.")]
+        [StringLength(14, ErrorMessage = "O CPF deve ter no máximo 14 caracteres.")]
+        public string Cpf { get; set; } = string.Empty;
     }
 }

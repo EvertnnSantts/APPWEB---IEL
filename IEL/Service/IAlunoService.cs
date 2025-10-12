@@ -1,4 +1,7 @@
 ﻿using IEL.Models;
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace IEL.Service
 {
@@ -12,10 +15,16 @@ namespace IEL.Service
 
         // Método para buscar alunos pelo nome
         Task<IEnumerable<Aluno>> GetAlunosByName(string name);
-        // Metado para buscar alunos pelo endereco
+
+        // Método para buscar aluno pelo endereço
         Task<Aluno> GetAlunoByAddress(string address);
-        // Método para buscar alunos pelo datadecoclusao
+
+        // Método para buscar alunos pela data de conclusão
         Task<IEnumerable<Aluno>> GetAlunosByDataDeConclusao(DateTime dataDeConclusao);
+
+        // Método para buscar aluno pelo CPF
+        Task<Aluno> GetAlunoByCpf(string cpf);
+
         // Método para criar um novo aluno
         Task<Aluno> CreateAluno(Aluno aluno);
 
