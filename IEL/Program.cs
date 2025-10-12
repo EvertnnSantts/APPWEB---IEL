@@ -12,19 +12,29 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Registro do serviço AlunoService
 builder.Services.AddScoped<IAlunoService, AlunosService>();
 
-// ?? Adiciona serviços do Swagger
+// Swagger
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// Adiciona suporte a controladores e views
+// Controladores e views
 builder.Services.AddControllersWithViews();
+
+// Configuração de CORS
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("PermitirTudo", policy =>
+    {
+        policy.AllowAnyOrigin()
+              .AllowAnyHeader()
+              .AllowAnyMethod();
+    });
+});
 
 var app = builder.Build();
 
-// Configuração do pipeline HTTP
+// Pipeline HTTP
 if (app.Environment.IsDevelopment())
 {
-    // ?? Ativa o Swagger no ambiente de desenvolvimento
     app.UseSwagger();
     app.UseSwaggerUI();
 }
@@ -38,6 +48,9 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+// Aplicar CORS
+app.UseCors("PermitirTudo");
 
 app.UseAuthorization();
 

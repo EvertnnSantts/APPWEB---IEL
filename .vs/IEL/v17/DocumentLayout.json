@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Migrations\\20251012110015_endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:IEL\\Migrations\\20251012110015_endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\service\\alunosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\service\\alunosservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\context\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\service\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\service\\ialunoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\migrations\\20251012110015_endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\migrations\\20251012110015_endereco.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\controllers\\alunocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\models\\aluno.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/appielDB/True/SqlTable/dbo.Alunos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
@@ -36,10 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\migrations\\20251011125743_populatabela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\migrations\\20251011125743_populatabela.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|c:\\users\\evert\\onedrive\\\u00E1rea de trabalho\\iel\\iel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A2A616F-BFA3-4E7B-891E-24B7A97CF371}|IEL\\IEL.csproj|solutionrelative:iel\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -49,37 +49,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "20251012110015_endereco.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Migrations\\20251012110015_endereco.cs",
               "RelativeDocumentMoniker": "IEL\\Migrations\\20251012110015_endereco.cs",
               "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Migrations\\20251012110015_endereco.cs",
               "RelativeToolTip": "IEL\\Migrations\\20251012110015_endereco.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T11:00:16.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T11:00:16.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Context\\AppDbContext.cs",
               "RelativeDocumentMoniker": "IEL\\Context\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Context\\AppDbContext.cs",
               "RelativeToolTip": "IEL\\Context\\AppDbContext.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAlwB8AAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAIA1wBkAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T10:59:22.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T10:59:22.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "20251011125743_PopulaTabela.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Migrations\\20251011125743_PopulaTabela.cs",
               "RelativeDocumentMoniker": "IEL\\Migrations\\20251011125743_PopulaTabela.cs",
@@ -91,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "IEL\\Controllers\\HomeController.cs",
@@ -103,7 +101,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Aluno.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Models\\Aluno.cs",
               "RelativeDocumentMoniker": "IEL\\Models\\Aluno.cs",
@@ -111,12 +109,11 @@
               "RelativeToolTip": "IEL\\Models\\Aluno.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAIA1wCQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-12T09:43:41.16Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-12T09:43:41.16Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "dbo.Alunos.sql",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/appielDB/True/SqlTable/dbo.Alunos.sql",
               "ToolTip": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/appielDB/True/SqlTable/dbo.Alunos.sql",
@@ -125,28 +122,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "AlunoController.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Controllers\\AlunoController.cs",
               "RelativeDocumentMoniker": "IEL\\Controllers\\AlunoController.cs",
               "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Controllers\\AlunoController.cs",
               "RelativeToolTip": "IEL\\Controllers\\AlunoController.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAA5wFYAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T15:42:34.895Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T15:42:34.895Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Program.cs",
               "RelativeDocumentMoniker": "IEL\\Program.cs",
               "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Program.cs",
               "RelativeToolTip": "IEL\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T15:35:20.379Z"
+              "WhenOpened": "2025-10-11T15:35:20.379Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -156,23 +153,21 @@
               "RelativeDocumentMoniker": "IEL\\Service\\AlunosService.cs",
               "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Service\\AlunosService.cs",
               "RelativeToolTip": "IEL\\Service\\AlunosService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAlwCkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T14:16:15.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T14:16:15.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IAlunoService.cs",
               "DocumentMoniker": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Service\\IAlunoService.cs",
               "RelativeDocumentMoniker": "IEL\\Service\\IAlunoService.cs",
               "ToolTip": "C:\\Users\\evert\\OneDrive\\\u00C1rea de Trabalho\\IEL\\IEL\\Service\\IAlunoService.cs",
               "RelativeToolTip": "IEL\\Service\\IAlunoService.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAswA8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-11T14:02:50.932Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-11T14:02:50.932Z"
             }
           ]
         }
