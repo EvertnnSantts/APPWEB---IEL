@@ -50,7 +50,7 @@ dotnet add package Microsoft.EntityFrameworkCore.SqlServer
 ### ⚙️ Configuração avançadas
 Já dentro dos arquivos da aplicação, configure a conexão do banco de dados SQL Server com a sua base de dados local.</br>
 caminho para acessar o arquivo a seguir: </br>
-\IEL\IELappsettings.json
+caminho: APPWEB---IEL\IEL\IELappsettings.json
 ```bash
 {
   "ConnectionStrings": {
@@ -66,4 +66,17 @@ caminho para acessar o arquivo a seguir: </br>
   "AllowedHosts": "*"
 }
 
+```
+### 🚀 Iniciação da aplicação
+
+Navegue até a pasta do frontend da aplicação e inicie o backend </br>
+caminho: APPWEB---IEL/IEL/
+```bash
+dotnet run
+```
+
+Navegue até a pasta do frontend da aplicação e inicie o frontend </br>
+caminho: APPWEB---IEL/IEL/Frontend/appielfront/ 
+```bash
+npm start
 ```
