@@ -129,9 +129,11 @@ function App() {
   };
 
   return (
-    <div className="App container">
-      <br />
-      <h2>Cadastro de Alunos</h2>
+    <div className="Appcontainer">
+      <div>
+        <h1 className="mt-3">Gerenciamento de Alunos - IEL </h1>
+        <hr />
+      </div>
 
       {/* 🔹 Filtro de CPF */}
       <div className="mb-3 d-flex">
@@ -146,13 +148,13 @@ function App() {
         <button className="btn btn-outline-dark ms-2" onClick={pedirDados}>Limpar</button>
       </div>
 
-      <button className="btn btn-primary mb-3" onClick={abrirFecharModalIncluir}>
+      <button className="btn btn-success mb-3" onClick={abrirFecharModalIncluir}>
         Adicionar Novo Aluno
       </button>
 
-      <table className="table table-bordered">
+      <table className="table table-hover">
         <thead>
-          <tr>
+          <tr className='table-info'>
             <th>ID</th>
             <th>Nome</th>
             <th>E-mail</th>
