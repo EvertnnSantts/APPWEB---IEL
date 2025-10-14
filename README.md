@@ -354,8 +354,99 @@ public async Task<Aluno> UpdateAluno(Aluno aluno)
 
 - O método retorna o aluno atualizado, que é enviado de volta ao controller.
 
+<hr style="border: 7px solid #00FF00;">
 
-## 💻 Interface da aplicação:
+## Filtro de busca de alunos:
+
+##### Frontend (Axios):
+```bash
+// 🔹 Buscar aluno por CPF
+const buscarPorCpf = async () => {
+  if (!cpfBusca.trim()) {
+    pedirDados(); // Se o campo estiver vazio, carrega todos os alunos
+    return;
+  }
+
+  try {
+    const response = await axios.get(`${baseUrl}/buscar-por-cpf?cpf=${cpfBusca}`);
+    if (response.data) {
+      setData([response.data]);
+    } else {
+      setData([]);
+    }
+  } catch (error) {
+    console.log(error);
+    setData([]);
+  }
+};
+
+```
+### 🟢 Explicação:
+
+- A função verifica se o campo de busca (cpfBusca) está vazio.
+
+- Se estiver, a função pedirDados() é chamada para recarregar a lista completa.
+
+- Caso contrário, é feita uma requisição GET ao endpoint /buscar-por-cpf, passando o CPF como parâmetro de consulta (query).
+
+- Se o backend retornar um aluno, os dados são exibidos; caso contrário, a lista é limpa (setData([])).
+
+- Em caso de erro, a função também zera os resultados.
+
+##### Controller (.NET)
+```bash
+[HttpGet("buscar-por-cpf")]
+public async Task<ActionResult<Aluno>> GetAlunoByCpf([FromQuery] string cpf)
+{
+    try
+    {
+        var aluno = await _alunoService.GetAlunoByCpf(cpf);
+        if (aluno == null)
+            return NotFound($"Aluno com CPF {cpf} não encontrado.");
+
+        return Ok(aluno);
+    }
+    catch (Exception ex)
+    {
+        return StatusCode(StatusCodes.Status500InternalServerError,
+            $"Erro ao tentar obter o aluno pelo CPF: {ex.Message}");
+    }
+}
+```
+### 🟢 Explicação:
+
+- O endpoint é definido como GET /api/aluno/buscar-por-cpf.
+
+- O parâmetro [FromQuery] string cpf captura o valor enviado na URL (?cpf=00000000000).
+
+- O método chama o service para buscar o aluno com o CPF informado.
+
+- Se o aluno for encontrado, retorna 200 (OK) com os dados.
+
+- Se não for encontrado, retorna 404 (Not Found).
+
+- Qualquer exceção inesperada retorna 500 (Internal Server Error).
+
+
+##### Service (Lógica e Persistência)):
+```bash
+// Método para buscar aluno pelo CPF
+public async Task<Aluno> GetAlunoByCpf(string cpf)
+{
+    return await _context.Alunos.FirstOrDefaultAsync(a => a.Cpf == cpf);
+}
+
+````
+
+### 🟢 Explicação:
+
+- O método FirstOrDefaultAsync() busca o primeiro aluno cujo CPF corresponda ao informado.
+
+- Caso nenhum registro seja encontrado, o método retorna null.
+
+- Esse resultado é tratado pelo controller, que decide se deve retornar 200 (OK) ou 404 (Not Found).
+
+- ## 💻 Interface da aplicação:
 
 #### Tabela:
 <p align="center">
