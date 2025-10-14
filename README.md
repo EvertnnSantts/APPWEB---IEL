@@ -472,3 +472,7 @@ public async Task<Aluno> GetAlunoByCpf(string cpf)
 <p align="center">
   <img src="https://raw.githubusercontent.com/EvertnnSantts/APPWEB---IEL/main/IEL/img/filtro.png" alt="Descrição" width="1000" height="600" />
 </p> <b/>
+
+
+### Autor
+- #### Everton Ferreira 
