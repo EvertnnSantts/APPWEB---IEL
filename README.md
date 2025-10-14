@@ -5,9 +5,13 @@ editar cadastros de alunos já existentes na base de dados e excluir alunos da b
 ## Características
 
 - 👤 Cadastro de usuários/alunos: criação, edição e exclusão de registros.
+  
 - ⚛️ React no Frontend: interface.
+  
 - 💻 ASP.NET MVC/API no Backend: arquitetura estruturada, separando lógica de apresentação, negócio.
+  
 - 🗄 Entity Framework Core: manipulação de banco de dados SQL Server.
+  
 - 🎨 Estilo consistente: uso de bibliotecas CSS, Bootstrap.
 
 ## Instalação & configuração de ambiente
