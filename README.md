@@ -4,7 +4,7 @@ editar cadastros de alunos já existentes na base de dados e excluir alunos da b
 
 ## Características
 
-- 👤 Cadastro de usuários/alunos: criação, edição e exclusão de registros.
+- 👤 Cadastro de alunos: criação, edição, filto e exclusão de registros.
   
 - ⚛️ React no Frontend: interface.
   
