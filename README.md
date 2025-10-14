@@ -353,3 +353,31 @@ public async Task<Aluno> UpdateAluno(Aluno aluno)
 - SaveChangesAsync() aplica efetivamente as mudanças.
 
 - O método retorna o aluno atualizado, que é enviado de volta ao controller.
+
+
+## 💻 Interface da aplicação:
+
+#### Tabela:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EvertnnSantts/APPWEB---IEL/main/IEL/img/tabela.png" alt="Descrição" width="1000" height="600" />
+</p> <b/>
+  
+#### Adicionar Usuario:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EvertnnSantts/APPWEB---IEL/main/IEL/img/adicionar.png" alt="Descrição" width="1000" height="600" />
+</p> <b/>
+
+#### Atualizar Usuario:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EvertnnSantts/APPWEB---IEL/main/IEL/img/editar.png" alt="Descrição" width="1000" height="600" />
+</p> <b/>
+
+#### Excluir Usuario:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EvertnnSantts/APPWEB---IEL/main/IEL/img/excluir.png" alt="Descrição" width="1000" height="600" />
+</p> <b/>
+
+#### Filtro de busca de Usuario:
+<p align="center">
+  <img src="https://raw.githubusercontent.com/EvertnnSantts/APPWEB---IEL/main/IEL/img/filtro.png" alt="Descrição" width="1000" height="600" />
+</p> <b/>
