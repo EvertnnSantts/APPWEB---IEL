@@ -475,4 +475,4 @@ public async Task<Aluno> GetAlunoByCpf(string cpf)
 
 
 ## Autor
-- #### Everton Santos [(Everton Santos)](https://dotnet.microsoft.com/pt-br/](https://github.com/EvertnnSantts))
+- #### Everton Santos
