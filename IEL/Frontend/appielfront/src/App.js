@@ -6,6 +6,7 @@ import { Modal, ModalBody, ModalHeader, ModalFooter } from 'reactstrap';
 import { NumericFormat } from 'react-number-format';
 
 function App() {
+  // 🔹 URL da API configuração para acessa os dados:
   const baseUrl = "https://localhost:44369/api/Aluno";
   const [data, setData] = useState([]);
   const [erro, setErro] = useState('');
@@ -138,10 +139,11 @@ function App() {
       {/* 🔹 Filtro de CPF */}
       <div className="mb-3 d-flex">
         <input
-          type="text"
+          type="number"
           className="form-control me-2"
-          placeholder="Buscar por CPF (so no numero)"
+          placeholder="Buscar por CPF (só no número)"
           value={cpfBusca}
+          maxLength={11}
           onChange={(e) => setCpfBusca(e.target.value)}
         />
         <button className="btn btn-secondary" onClick={buscarPorCpf}>Buscar</button>
@@ -205,8 +207,10 @@ function App() {
           onValueChange={(values) => {
           setAlunoSelecionado((prev) => ({ ...prev, cpf: values.value })); 
         }}
+           maxLength={11}
           className="form-control"
-         placeholder="000.000.000-00"/>
+          placeholder="só no número"
+         />
 
             <label>Data de Conclusão</label>
             <input type="date" className="form-control" name="dateConclusao" value={alunoSelecionado.dateConclusao} onChange={handleChange} />
@@ -238,7 +242,7 @@ function App() {
             <input type="text" className="form-control" name="email" value={alunoSelecionado?.email || ''} onChange={handleChange} />
 
             <label>CPF</label>
-            <input type="text" className="form-control" name="cpf" value={alunoSelecionado?.cpf || ''} onChange={handleChange} />
+            <input type="number" className="form-control" name="cpf" value={alunoSelecionado?.cpf || ''} onChange={handleChange}    maxLength={11} placeholder="só no número"/>
 
             <label>Data de Conclusão</label>
             <input type="date" className="form-control" name="dateConclusao" value={alunoSelecionado?.dateConclusao?.split('T')[0] || ''} onChange={handleChange} />

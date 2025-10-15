@@ -87,7 +87,7 @@ namespace IEL.Controllers
             }
         }
 
-        // ✅ GET: api/Aluno/buscar-por-cpf?cpf=123.456.789-00
+        // GET: api/Aluno/buscar-por-cpf?cpf=123.456.789-00
         [HttpGet("buscar-por-cpf")]
         public async Task<ActionResult<Aluno>> GetAlunoByCpf([FromQuery] string cpf)
         {
