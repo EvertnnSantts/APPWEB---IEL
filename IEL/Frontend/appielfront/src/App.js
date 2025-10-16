@@ -7,7 +7,7 @@ import { NumericFormat } from 'react-number-format';
 
 function App() {
   // 🔹 URL da API configuração para acessa os dados:
-  const baseUrl = "https://localhost:44369/api/Aluno";
+  const baseUrl = "http://localhost:5260/api/Aluno";
   const [data, setData] = useState([]);
   const [erro, setErro] = useState('');
   const [cpfBusca, setCpfBusca] = useState('');
